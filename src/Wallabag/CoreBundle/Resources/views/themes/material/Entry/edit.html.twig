@@ -49,8 +49,12 @@
                             {{ form_label(form.origin_url) }}
                             {{ form_widget(form.origin_url) }}
                         </div>
-                        <br>
-
+                        
+                       <div class="input-field s12">
+                           {{ form_label(form.content) }}
+                           {{ form_widget(form.content) }}
+                       </div>
+                       <br>
                         {{ form_widget(form.save, {'attr': {'class': 'btn waves-effect waves-light'}}) }}
                     </div>
                     {{ form_rest(form) }}
